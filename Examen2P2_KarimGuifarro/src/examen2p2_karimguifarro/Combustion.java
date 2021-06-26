@@ -13,13 +13,13 @@ public class Combustion extends auto{
      private int cilindrada;
     private int cilindros;
     private int consumo_combustible;
-    
-    public Combustion(String marca, String modelo, String VIN, String carroceria ,int cilindrada, int cilindros, int consumo_combustible) {
+
+    public Combustion(String marca, String modelo, String VIN, String carroceria,int cilindrada, int cilindros, int consumo_combustible) {
+        super(marca, modelo, VIN, carroceria);
         this.cilindrada = cilindrada;
         this.cilindros = cilindros;
         this.consumo_combustible = consumo_combustible;
-    }
-
+    } 
     public int getCilindrada() {
         return cilindrada;
     }
@@ -43,7 +43,6 @@ public class Combustion extends auto{
     public void setConsumo_combustible(int consumo_combustible) {
         this.consumo_combustible = consumo_combustible;
     }
-
     @Override
     public String toString() {
         return "Hibrido{"+ super.toString() + "cilindrada=" + cilindrada + ", cilindros=" + cilindros + ", consumo_combustible=" + consumo_combustible + '}';

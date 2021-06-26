@@ -14,11 +14,14 @@ public class Hibrido extends auto{
    private int cant_pasajeros;
    private int precio;
 
-    public Hibrido( String marca, String modelo, String VIN, String carroceria, int km_autonomia, int cant_pasajeros, int precio) {
+    public Hibrido(String marca, String modelo, String VIN, String carroceria,int km_autonomia, int cant_pasajeros, int precio) {
+        super(marca, modelo, VIN, carroceria);
         this.km_autonomia = km_autonomia;
         this.cant_pasajeros = cant_pasajeros;
         this.precio = precio;
     }
+
+  
 
     public int getKm_autonomia() {
         return km_autonomia;

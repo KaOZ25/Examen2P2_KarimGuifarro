@@ -7,6 +7,21 @@ public class auto implements Serializable{
     private String modelo;
     private String VIN;
     private String carroceria;
+    private Bateria bateria;
+
+    public auto(String marca, String modelo, String VIN, String carroceria) {
+        this.marca = marca;
+        this.modelo = modelo;
+        this.VIN = VIN;
+        this.carroceria = carroceria;
+    }
+    public Bateria getBateria() {
+        return bateria;
+    }
+
+    public void setBateria(Bateria bateria) {
+        this.bateria = bateria;
+    }
     
     public String getMarca() {
         return marca;
@@ -38,6 +53,11 @@ public class auto implements Serializable{
 
     public void setCarroceria(String carroceria) {
         this.carroceria = carroceria;
+    }
+
+    @Override
+    public String toString() {
+        return "auto{" + "marca=" + marca + ", modelo=" + modelo + ", VIN=" + VIN + ", carroceria=" + carroceria;
     }
     
 }

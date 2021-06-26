@@ -8,6 +8,7 @@ public class Electrico extends auto{
     private int recarga;
 
     public Electrico(String marca, String modelo, String VIN, String carroceria,int coe_aerodinamico, int cant_motores, int recarga) {
+        super(marca, modelo, VIN, carroceria);
         this.coe_aerodinamico = coe_aerodinamico;
         this.cant_motores = cant_motores;
         this.recarga = recarga;

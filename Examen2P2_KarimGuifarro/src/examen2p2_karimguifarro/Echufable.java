@@ -6,9 +6,12 @@ public class Echufable extends auto{
   private int gal_combustible;
 
     public Echufable(String marca, String modelo, String VIN, String carroceria,int maletero, int gal_combustible) {
+        super(marca, modelo, VIN, carroceria);
         this.maletero = maletero;
         this.gal_combustible = gal_combustible;
     }
+
+  
 
     public int getMaletero() {
         return maletero;
